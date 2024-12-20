@@ -1,6 +1,6 @@
 # **Glamora** - Kuaför Randevu Uygulaması
 
-![Glamora Logo](glamora.png)
+<img src="glamora.png" alt="Start Screen" height="200" />
 
 **Glamora**, kullanıcıların en yakın kuaför salonlarında kolayca randevu alabilecekleri, salonları keşfedebilecekleri ve kişisel bakım ihtiyaçlarını karşılayabilecekleri bir mobil uygulamadır.
 
