@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Glamora</string>
+    <string name="hello_blank_fragment">Blank fragment</string>
+    <string name="onboarding_1_title">Easily book your hair salon appointments</string>
+    <string name="onboarding_1_description">Choose the service you need check the available times and book your appointment instantly</string>
+
+    <string name="onboarding_2_title">Manage your appointments with ease</string>
+    <string name="onboarding_2_description">Track your appointments get reminders and make changes to better manage your time</string>
+
+    <string name="onboarding_3_title">Stay in touch with your stylist</string>
+    <string name="onboarding_3_description">Message your stylist directly ask questions and provide details about your service</string>
+
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
 </resources>
