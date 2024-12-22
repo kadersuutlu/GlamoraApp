@@ -19,15 +19,14 @@ class ThirdScreenFragment : BaseFragment<FragmentThirdScreenBinding, ThirdScreen
         viewModel.navigateToRoleSelection.observe(viewLifecycleOwner, Observer { navigate ->
             if (navigate) {
                 findNavController().navigate(R.id.action_viewPagerFragment2_to_roleSelectionScreenFragment2)
+                viewModel.resetNavigation()
             }
         })
 
         binding.finish.setOnClickListener {
-            viewModel.onBoardingFinished(requireContext())
+            viewModel.onBoardingFinished()
         }
     }
-
-
 
     override fun createViewBinding(
         inflater: LayoutInflater,
@@ -37,11 +36,4 @@ class ThirdScreenFragment : BaseFragment<FragmentThirdScreenBinding, ThirdScreen
     }
 
     override val viewModel by viewModels<ThirdScreenViewModel>()
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return binding.root
-    }
 }
