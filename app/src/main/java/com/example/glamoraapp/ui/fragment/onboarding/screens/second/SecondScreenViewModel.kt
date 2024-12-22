@@ -9,7 +9,7 @@ import javax.inject.Inject
 @HiltViewModel
 class SecondScreenViewModel @Inject constructor() : ViewModel() {
 
-    private val _currentPage = MutableLiveData<Int>()
+    private val _currentPage = MutableLiveData<Int>().apply { value = 1 } // Varsayılan değer
     val currentPage: LiveData<Int> get() = _currentPage
 
     fun goToNextPage() {

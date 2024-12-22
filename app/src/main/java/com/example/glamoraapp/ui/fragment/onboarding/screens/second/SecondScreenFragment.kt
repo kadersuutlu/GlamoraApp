@@ -17,7 +17,7 @@ class SecondScreenFragment : BaseFragment<FragmentSecondScreenBinding, SecondScr
 
     override fun initView() {
         viewModel.currentPage.observe(viewLifecycleOwner, Observer { currentPage ->
-            val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager2)
+            val viewPager = requireActivity().findViewById<ViewPager2>(R.id.viewPager2)
             viewPager?.currentItem = currentPage
         })
 
@@ -34,11 +34,4 @@ class SecondScreenFragment : BaseFragment<FragmentSecondScreenBinding, SecondScr
     }
 
     override val viewModel by viewModels<SecondScreenViewModel>()
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return binding.root
-    }
 }
