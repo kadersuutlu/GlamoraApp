@@ -11,8 +11,7 @@ import androidx.viewbinding.ViewBinding
 abstract class BaseFragment<T : ViewBinding, VM : ViewModel> : Fragment() {
 
     private var _binding: T? = null
-    protected val binding get() = _binding ?: throw IllegalStateException("Binding should not be null")
-
+    protected val binding get() = _binding!!
     abstract fun initView()
     abstract val viewModel: VM
 
@@ -32,8 +31,8 @@ abstract class BaseFragment<T : ViewBinding, VM : ViewModel> : Fragment() {
         initView()
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
+    override fun onDestroy() {
+        super.onDestroy()
         _binding = null
     }
 }
