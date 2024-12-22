@@ -17,20 +17,13 @@ class FirstScreenFragment : BaseFragment<FragmentFirstScreenBinding, FirstScreen
 
     override fun initView() {
         viewModel.currentPage.observe(viewLifecycleOwner, Observer { currentPage ->
-            val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager2)
+            val viewPager = requireActivity().findViewById<ViewPager2>(R.id.viewPager2)
             viewPager?.currentItem = currentPage
         })
 
         binding.next.setOnClickListener {
             viewModel.goToNextPage()
         }
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return binding.root
     }
 
     override val viewModel by viewModels<FirstScreenViewModel>()

@@ -9,10 +9,10 @@ import javax.inject.Inject
 @HiltViewModel
 class FirstScreenViewModel @Inject constructor() : ViewModel() {
 
-    private val _currentPage = MutableLiveData<Int>()
+    private val _currentPage = MutableLiveData<Int>().apply { value = 0 }
     val currentPage: LiveData<Int> get() = _currentPage
 
     fun goToNextPage() {
-        _currentPage.value = 1
+        _currentPage.value = (_currentPage.value ?: 0) + 1
     }
 }
