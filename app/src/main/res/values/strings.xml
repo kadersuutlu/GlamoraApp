@@ -21,4 +21,51 @@
     <string name="role_customer_description">Discover services and book appointments</string>
     <string name="role_selection_footer">Select your role to begin a great experience.</string>
 
+    <!-- Hairdresser Registration Strings -->
+    <string name="hairdresser_register_title">Register as a Hairdresser</string>
+    <string name="hairdresser_register_business_name">Business Name</string>
+    <string name="hairdresser_register_name">Full Name</string>
+    <string name="hairdresser_register_email">Email Address</string>
+    <string name="hairdresser_register_password">Password</string>
+    <string name="hairdresser_register_working_hours">Working Hours</string>
+    <string name="hairdresser_register_services">Services Offered</string>
+    <string name="hairdresser_register_phone_number">Phone Number</string>
+    <string name="hairdresser_register_address">Business Address</string>
+    <string name="hairdresser_register_terms">I agree to the terms and conditions</string>
+    <string name="hairdresser_register_button">Register</string>
+
+    <!-- General Strings -->
+    <string name="activity_register_text">Already have an account?</string>
+    <string name="activity_register_login">Log In</string>
+
+    <!-- Title -->
+    <string name="customer_register_title">Customer Registration</string>
+
+    <!-- Input Field Labels -->
+    <string name="customer_register_name">Full Name</string>
+    <string name="customer_register_email">Email Address</string>
+    <string name="customer_register_phone_number">Phone Number</string>
+    <string name="customer_register_password">Password</string>
+    <string name="customer_register_password_again">Confirm Password</string>
+
+    <!-- Terms & Conditions -->
+    <string name="customer_register_terms">I agree to the terms and conditions</string>
+
+    <!-- Button Text -->
+    <string name="customer_register_button">Register</string>
+
+    <!-- Footer Text -->
+    <string name="customer_register_text">Already have an account?</string>
+    <string name="customer_register_login">Log In</string>
+
+    <!-- Hairdresser Login -->
+    <string name="hairdresser_login_title">Hairdresser Login</string>
+    <string name="login_email">Email Address</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!-- Customer Login -->
+    <string name="customer_login_title">Customer Login</string>
+
 </resources>
