@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="primary_color">#c44191</color>
+    <color name="primary">#c44191</color>
+    <color name="primary_dark">#a23475</color>
+    <color name="primary_light">#e87bb3</color>
+    <color name="accent">#41c47f</color>
+    <color name="background">#f9f9f9</color>
+    <color name="surface">#ffffff</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="error">#d32f2f</color>
+    <color name="divider">#e0e0e0</color>
+    <color name="disabled">#bdbdbd</color>
 </resources>
