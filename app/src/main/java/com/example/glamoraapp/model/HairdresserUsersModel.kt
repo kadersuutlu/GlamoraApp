@@ -1,6 +1,6 @@
 package com.example.glamoraapp.model
 
-data class HairdresserModel(
+data class HairdresserUsersModel(
     val fullName: String,
     val businessName: String,
     val phoneNumber: String,
