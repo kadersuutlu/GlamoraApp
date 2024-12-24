@@ -43,6 +43,7 @@
 
     <!-- Input Field Labels -->
     <string name="customer_register_name">Full Name</string>
+    <string name="customer_register_user_name">User Name</string>
     <string name="customer_register_email">Email Address</string>
     <string name="customer_register_phone_number">Phone Number</string>
     <string name="customer_register_password">Password</string>
@@ -67,5 +68,33 @@
 
     <!-- Customer Login -->
     <string name="customer_login_title">Customer Login</string>
+
+    <string name="register_error_empty_fields">All fields are required</string>
+    <string name="register_error_passwords_not_match">Passwords do not match</string>
+    <string name="register_error_invalid_password">Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, and a number.</string>
+    <string name="register_error_failed_registration">Customer registration failed</string>
+    <string name="register_error_save_failed">Customer could not be saved</string>
+    <string name="register_error_realtime_db">Error occurred while saving to Realtime Database: %1$s</string>
+    <string name="register_error_firestore">Error occurred while saving to Firestore: %1$s</string>
+    <string name="register_success">Registration successful</string>
+
+    <!-- Login Error Messages -->
+    <string name="login_error_failed">Giriş başarısız</string>
+
+    <!-- Reset Password Error Messages -->
+    <string name="reset_password_error_failed">Şifre sıfırlama başarısız</string>
+
+    <!-- Success Messages -->
+    <string name="login_success">Giriş başarılı</string>
+    <string name="reset_password_success">Şifre sıfırlama başarılı. Lütfen e-posta adresinizi kontrol edin.</string>
+
+    <!-- Generic Error Messages -->
+    <string name="error_generic">Bir hata oluştu. Lütfen tekrar deneyin.</string>
+
+    <string name="error_empty_fields">Tüm alanları doldurmak zorunludur</string>
+    <string name="error_invalid_email">Lütfen e-posta adresinizi girin</string>
+    <string name="login_failed">Giriş başarısız</string>
+    <string name="reset_password_email_sent">Şifre sıfırlama e-postası gönderildi.</string>
+    <string name="reset_password_failed">Şifre sıfırlama başarısız</string>
 
 </resources>

@@ -34,5 +34,48 @@
         android:id="@+id/roleSelectionScreenFragment2"
         android:name="com.example.glamoraapp.ui.fragment.roleselection.RoleSelectionScreenFragment"
         android:label="fragment_role_selection_screen"
-        tools:layout="@layout/fragment_role_selection_screen" />
+        tools:layout="@layout/fragment_role_selection_screen" >
+        <action
+            android:id="@+id/action_roleSelectionScreenFragment2_to_hairdresserRegisterFragment"
+            app:destination="@id/hairdresserRegisterFragment" />
+        <action
+            android:id="@+id/action_roleSelectionScreenFragment2_to_customerRegisterFragment"
+            app:destination="@id/customerRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hairdresserLoginFragment"
+        android:name="com.example.glamoraapp.ui.fragment.hairdresser.login.HairdresserLoginFragment"
+        android:label="fragment_hairdresser_login"
+        tools:layout="@layout/fragment_hairdresser_login" >
+        <action
+            android:id="@+id/action_hairdresserLoginFragment_to_hairdresserRegisterFragment"
+            app:destination="@id/hairdresserRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hairdresserRegisterFragment"
+        android:name="com.example.glamoraapp.ui.fragment.hairdresser.register.HairdresserRegisterFragment"
+        android:label="fragment_hairdresser_register"
+        tools:layout="@layout/fragment_hairdresser_register" >
+        <action
+            android:id="@+id/action_hairdresserRegisterFragment_to_hairdresserLoginFragment"
+            app:destination="@id/hairdresserLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerRegisterFragment"
+        android:name="com.example.glamoraapp.ui.fragment.customer.register.CustomerRegisterFragment"
+        android:label="fragment_customer_register"
+        tools:layout="@layout/fragment_customer_register" >
+        <action
+            android:id="@+id/action_customerRegisterFragment_to_customerLoginFragment"
+            app:destination="@id/customerLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerLoginFragment"
+        android:name="com.example.glamoraapp.ui.fragment.customer.login.CustomerLoginFragment"
+        android:label="fragment_customer_login"
+        tools:layout="@layout/fragment_customer_login" >
+        <action
+            android:id="@+id/action_customerLoginFragment_to_customerRegisterFragment"
+            app:destination="@id/customerRegisterFragment" />
+    </fragment>
 </navigation>
