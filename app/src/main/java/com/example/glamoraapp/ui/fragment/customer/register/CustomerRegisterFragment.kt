@@ -25,7 +25,7 @@ class CustomerRegisterFragment :
         binding.registerButton.setOnClickListener {
             val fullName = binding.nameInput.editText?.text.toString()
             val phoneNumber = binding.phoneNumberInput.editText?.text.toString()
-            val email = binding.emailInput.editText?.text.toString()
+            val email = binding.emailInput.editText?.text.toString().trim()
             val password = binding.passwordInput.editText?.text.toString()
             val passwordAgain = binding.passwordAgainInput.editText?.text.toString()
 
@@ -44,12 +44,6 @@ class CustomerRegisterFragment :
                     Toast.makeText(requireContext(), state, Toast.LENGTH_SHORT).show()
                 }
             }
-        }
-    }
-
-    private fun observeViewModel() {
-        viewModel.registerState.observe(viewLifecycleOwner) { message ->
-            Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
         }
     }
 
