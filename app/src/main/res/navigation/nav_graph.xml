@@ -78,4 +78,19 @@
             android:id="@+id/action_customerLoginFragment_to_customerRegisterFragment"
             app:destination="@id/customerRegisterFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/thirdScreenFragment"
+        android:name="com.example.glamoraapp.ui.fragment.onboarding.screens.third.ThirdScreenFragment"
+        android:label="fragment_third_screen"
+        tools:layout="@layout/fragment_third_screen" />
+    <fragment
+        android:id="@+id/firstScreenFragment"
+        android:name="com.example.glamoraapp.ui.fragment.onboarding.screens.first.FirstScreenFragment"
+        android:label="fragment_first_screen"
+        tools:layout="@layout/fragment_first_screen" />
+    <fragment
+        android:id="@+id/secondScreenFragment"
+        android:name="com.example.glamoraapp.ui.fragment.onboarding.screens.second.SecondScreenFragment"
+        android:label="fragment_second_screen"
+        tools:layout="@layout/fragment_second_screen" />
 </navigation>
