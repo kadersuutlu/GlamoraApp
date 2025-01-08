@@ -104,7 +104,7 @@ class HairdresserRegisterViewModel @Inject constructor(
             }
     }
 
-    fun isPasswordValid(password: String): Boolean {
+    private fun isPasswordValid(password: String): Boolean {
         val passwordPattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}\$"
         return password.matches(Regex(passwordPattern))
     }

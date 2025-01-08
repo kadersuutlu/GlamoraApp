@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.glamoraapp.R
 import com.example.glamoraapp.databinding.FragmentHairdresserRegisterBinding
 import com.example.glamoraapp.ui.BaseFragment
-import com.example.glamoraapp.ui.activity.MainActivity
+import com.example.glamoraapp.ui.activity.hairdresser.HairdresserActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -37,7 +37,7 @@ class HairdresserRegisterFragment :
                         requireActivity().getSharedPreferences("AppPrefs", Context.MODE_PRIVATE)
                     sharedPreferences.edit().putBoolean("isLoggedIn", true).apply()
 
-                    val intent = Intent(requireContext(), MainActivity::class.java)
+                    val intent = Intent(requireContext(), HairdresserActivity::class.java)
                     startActivity(intent)
                     activity?.finish()
                 } else {
