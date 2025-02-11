@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="service_categories">
+        <item>Haircut</item>
+        <item>Hair Coloring</item>
+        <item>Hair Treatment</item>
+        <item>Hairstyling</item>
+        <item>Manicure and Pedicure</item>
+        <item>Makeup</item>
+        <item>Eyebrows and Lashes</item>
+        <item>Bridal and Special Event Styling</item>
+        <item>Waxing and Hair Removal</item>
+    </string-array>
+</resources>

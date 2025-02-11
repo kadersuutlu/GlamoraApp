@@ -103,4 +103,11 @@
     <string name="calendar">Calendar</string>
     <string name="customers">Customers</string>
 
+
+    <string name="services">Service</string>
+    <string name="specialist">Hair Specialist</string>
+    <string name="update">Update</string>
+    <string name="available_slot">Available Slot</string>
+    <string name="book_appointment">Book Appointment</string>
+
 </resources>

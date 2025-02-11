@@ -178,7 +178,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" />
 
-                          <TextView
+                        <TextView
                             android:id="@+id/termsTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -235,7 +235,6 @@
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>

@@ -1,14 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/cardview_light_background"
     tools:context=".ui.fragment.customer.appointment.AppointmentFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <CalendarView
+            android:id="@+id/appointmentCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/available_slot"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:padding="8dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="10:30-11:45 AM"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="10:30-11:45 AM"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="10:30-11:45 AM"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="10:30-11:45 AM"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="10:30-11:45 AM"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="10:30-11:45 AM"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="10:30-11:45 AM"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="10:30-11:45 AM"/>
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/homeSpecialist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:text="@string/specialist"
+            android:textSize="20sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/specialistCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/profileCardView">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+
+                    <include
+                        layout="@layout/include_specialist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/primary"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="@string/book_appointment"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
