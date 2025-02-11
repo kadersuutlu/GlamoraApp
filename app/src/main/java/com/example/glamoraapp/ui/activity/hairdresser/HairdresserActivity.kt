@@ -4,7 +4,9 @@ import android.view.LayoutInflater
 import androidx.activity.viewModels
 import com.example.glamoraapp.databinding.ActivityHairdresserBinding
 import com.example.glamoraapp.ui.BaseActivity
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HairdresserActivity : BaseActivity<ActivityHairdresserBinding, HairdresserViewModel>() {
     override val viewModel: HairdresserViewModel by viewModels()
 
@@ -12,7 +14,7 @@ class HairdresserActivity : BaseActivity<ActivityHairdresserBinding, Hairdresser
         return ActivityHairdresserBinding.inflate(inflater)
     }
     override fun initView() {
-
+        supportActionBar?.hide()
     }
 
 }

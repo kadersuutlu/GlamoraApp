@@ -8,7 +8,7 @@
     tools:context=".ui.activity.customer.CustomerActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/nav_host_fragment"
+        android:id="@+id/nav_host_fragment_customer"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -18,19 +18,19 @@
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/nav_graph">
+        app:navGraph="@navigation/customer_nav_graph">
 
     </androidx.fragment.app.FragmentContainerView>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav"
+        android:id="@+id/bottom_nav_customer"
         android:layout_width="wrap_content"
         android:layout_height="?attr/actionBarSize"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_customer"
         app:menu="@menu/customer_bottom_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
