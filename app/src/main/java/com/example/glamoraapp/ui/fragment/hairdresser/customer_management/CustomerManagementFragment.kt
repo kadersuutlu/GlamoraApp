@@ -1,26 +1,26 @@
 package com.example.glamoraapp.ui.fragment.hairdresser.customer_management
 
-import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import com.example.glamoraapp.R
+import androidx.fragment.app.viewModels
+import com.example.glamoraapp.databinding.FragmentCustomerManagementBinding
+import com.example.glamoraapp.ui.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
+class CustomerManagementFragment :
+    BaseFragment<FragmentCustomerManagementBinding, CustomerManagementViewModel>() {
 
-class CustomerManagementFragment : Fragment() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
+    override fun initView() {
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_customer_management, container, false)
-    }
+    override val viewModel: CustomerManagementViewModel by viewModels()
+
+
+    override fun createViewBinding(
+        inflater: LayoutInflater,
+        container: ViewGroup?
+    ): FragmentCustomerManagementBinding =
+        FragmentCustomerManagementBinding.inflate(inflater, container, false)
 
 }

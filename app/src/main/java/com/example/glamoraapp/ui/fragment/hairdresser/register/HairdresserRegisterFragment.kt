@@ -19,7 +19,7 @@ class HairdresserRegisterFragment :
 
     override fun initView() {
         binding.letLogIn.setOnClickListener {
-            findNavController().navigate(R.id.action_customerRegisterFragment_to_customerLoginFragment)
+            findNavController().navigate(R.id.action_hairdresserRegisterFragment_to_hairdresserLoginFragment)
         }
 
         binding.registerButton.setOnClickListener {

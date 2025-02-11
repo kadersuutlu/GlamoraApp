@@ -46,7 +46,7 @@ class HairdresserRegisterViewModel @Inject constructor(
             return
         }
 
-        firebaseAuth.createUserWithEmailAndPassword(email, password)
+        firebaseAuth.createUserWithEmailAndPassword(email.toString().trim(), password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     val user = firebaseAuth.currentUser

@@ -1,25 +1,26 @@
 package com.example.glamoraapp.ui.fragment.hairdresser.profile
 
-import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import com.example.glamoraapp.R
-class HairdresserProfileFragment : Fragment() {
+import androidx.fragment.app.viewModels
+import com.example.glamoraapp.databinding.FragmentHairdresserProfileBinding
+import com.example.glamoraapp.ui.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+@AndroidEntryPoint
+class HairdresserProfileFragment :
+    BaseFragment<FragmentHairdresserProfileBinding, HairdresserProfileViewModel>() {
+
+    override fun initView() {
 
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hairdresser_profile, container, false)
-    }
+    override val viewModel: HairdresserProfileViewModel by viewModels()
 
+    override fun createViewBinding(
+        inflater: LayoutInflater,
+        container: ViewGroup?
+    ): FragmentHairdresserProfileBinding =
+        FragmentHairdresserProfileBinding.inflate(inflater, container, false)
 
 }
