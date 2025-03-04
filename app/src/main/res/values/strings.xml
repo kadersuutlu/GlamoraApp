@@ -93,6 +93,7 @@
 
     <string name="error_empty_fields">Tüm alanları doldurmak zorunludur</string>
     <string name="error_invalid_email">Lütfen e-posta adresinizi girin</string>
+    <string name="register_error_invalid_email">Lütfen e-posta adresinizi girin</string>
     <string name="login_failed">Giriş başarısız</string>
     <string name="reset_password_email_sent">Şifre sıfırlama e-postası gönderildi.</string>
     <string name="reset_password_failed">Şifre sıfırlama başarısız</string>

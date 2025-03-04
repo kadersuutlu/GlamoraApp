@@ -31,7 +31,7 @@ class HairdresserRegisterViewModel @Inject constructor(
         password: String,
         passwordAgain: String
     ) {
-        if (bussinessName.isEmpty() || phoneNumber.isEmpty() || email.isEmpty() || password.isEmpty() || passwordAgain.isEmpty()) {
+        if (bussinessName.isEmpty() || email.isEmpty() || phoneNumber.isEmpty() ||  password.isEmpty() || passwordAgain.isEmpty()) {
             _registerState.value = context.getString(R.string.register_error_empty_fields)
             return
         }
@@ -46,7 +46,13 @@ class HairdresserRegisterViewModel @Inject constructor(
             return
         }
 
-        firebaseAuth.createUserWithEmailAndPassword(email.toString().trim(), password)
+        if (!isValidEmail(email)) {
+            _registerState.value = context.getString(R.string.register_error_invalid_email)
+            return
+        }
+
+
+        firebaseAuth.createUserWithEmailAndPassword(email.trim(), password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     val user = firebaseAuth.currentUser
@@ -108,4 +114,9 @@ class HairdresserRegisterViewModel @Inject constructor(
         val passwordPattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}\$"
         return password.matches(Regex(passwordPattern))
     }
+
+    private fun isValidEmail(email: String): Boolean {
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
+    }
+
 }

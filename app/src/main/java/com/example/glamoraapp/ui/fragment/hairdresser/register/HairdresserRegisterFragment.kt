@@ -29,7 +29,7 @@ class HairdresserRegisterFragment :
             val password = binding.passwordInput.editText?.text.toString()
             val passwordAgain = binding.passwordAgainInput.editText?.text.toString()
 
-            viewModel.registerHairdresser(bussinessName, phoneNumber, email, password, passwordAgain)
+            viewModel.registerHairdresser(bussinessName, email, phoneNumber, password, passwordAgain)
 
             viewModel.registerState.observe(viewLifecycleOwner) { state ->
                 if (state == getString(R.string.register_success)) {
