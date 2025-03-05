@@ -9,10 +9,6 @@
         android:id="@+id/nav_calendar"
         android:icon="@drawable/ic_appointment_icon"
         android:title="@string/calendar" />
-    <item
-        android:id="@+id/nav_customer_management"
-        android:icon="@drawable/ic_customer_icon"
-        android:title="@string/customers" />
 
     <item
         android:id="@+id/nav_hairdresser_profile"

@@ -10,16 +10,13 @@
         android:name="com.example.glamoraapp.ui.fragment.hairdresser.profile.HairdresserProfileFragment"
         android:label="fragment_hairdresser_profile"
         tools:layout="@layout/fragment_hairdresser_profile" />
+
     <fragment
         android:id="@+id/hairdresserHomeFragment"
         android:name="com.example.glamoraapp.ui.fragment.hairdresser.home.HairdresserHomeFragment"
         android:label="fragment_hairdresser_home"
         tools:layout="@layout/fragment_hairdresser_home" />
-    <fragment
-        android:id="@+id/customerManagementFragment"
-        android:name="com.example.glamoraapp.ui.fragment.hairdresser.customer_management.CustomerManagementFragment"
-        android:label="fragment_customer_management"
-        tools:layout="@layout/fragment_customer_management" />
+
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.example.glamoraapp.ui.fragment.hairdresser.calendar.CalendarFragment"
